@@ -8,19 +8,19 @@ module "common" {
   az1 = "XXXXX"
   az2 = "XXXXX"
   bastion = {
-    image_id = "XXXXX"
-    key_name = "XXXXX"
+    image_id = "ami-09d3b3274b6c5d4aa"
+    key_name = "vockey"
   }
   template = {
-    image_id = "XXXXX"
-    key_name = "XXXXX"
+    image_id = "ami-09d3b3274b6c5d4aa"
+    key_name = "vockey"
   }
   database = {
     host              = "localhost"
     port              = "3306"
     db_name           = "mydb"
-    username          = "XXXXX"
-    password          = "XXXXX"
+    username          = "sy"
+    password          = "sy20030124"
     engine            = "aurora-mysql"
     engine_version    = "5.7.mysql_aurora.2.11.0"
     instance_class    = "db.t3.small"
@@ -37,9 +37,9 @@ module "common" {
     bucket_name = "XXXXX"
   }
   app = {
-    image_id = "XXXXX"
+    image_id = "ami-09d3b3274b6c5d4aa"
     instance_type = "t2.small"
-    key_name = "XXXXX"
+    key_name = "vockey"
     max_size = 0
     min_size = 0
   }
