@@ -5,8 +5,8 @@ terraform {
 module "common" {
   source = "../common"
   region = "us-east1"
-  az1 = "XXXXX"
-  az2 = "XXXXX"
+  az1 = "us-east1a"
+  az2 = "us-east1c"
   bastion = {
     image_id = "ami-09d3b3274b6c5d4aa"
     key_name = "vockey"
