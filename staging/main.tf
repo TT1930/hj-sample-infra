@@ -4,7 +4,7 @@ terraform {
 
 module "common" {
   source = "../common"
-  region = "XXXXX"
+  region = "us-east1"
   az1 = "XXXXX"
   az2 = "XXXXX"
   bastion = {
@@ -31,10 +31,10 @@ module "common" {
     key_name = "sessionId"
   }
   s3_original = {
-    bucket_name = "XXXXX"
+    bucket_name = "bucket1"
   }
   s3_thumbnail = {
-    bucket_name = "XXXXX"
+    bucket_name = "bucket2"
   }
   app = {
     image_id = "ami-09d3b3274b6c5d4aa"
